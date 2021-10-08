@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "IM_Hyemin-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "paybooc-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  justify-content: center;
+}
+
+.item1 {
+  margin: 10% auto 5%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+}
+
+.item2 {
+  margin: 0 auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*-------------------------GRID 설정---------------------*/
+.title {
+  padding-top: 2rem;
+  font-family: "IM_Hyemin-Regular";
+  text-align: center;
+}
+
+#btn_St {
+  width: 200px;
+  height: auto;
+  margin: 1rem;
+  font-family: "paybooc-Bold";
+}

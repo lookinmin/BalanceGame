@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link href="/css/home/game.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+<body>
+  <div type="hidden" id="dbData" value="<%=data%>" /></div> 
+  <div class="wrapper">
+    <div class="item1">
+      <h2 id="title">Quiz Title</h2>
+    </div>
+
+    <div class="item2">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" id="myCarousel" data-bs-interval="false" data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" id="indi1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: grey;"></button>
+          <button type="button" id="indi2" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: grey;"></button>
+          <button type="button" id="indi3" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: grey;"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="sector" id="D1">
+              <div class="Question">
+                <h2 class="text_q" id="q1">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L1">
+                <h2 class="text_a" id="l1">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R1">
+                <h2 class="text_b" id="r1">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D2">
+              <div class="Question">
+                <h2 class="text_q" id="q2">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L2">
+                <h2 class="text_a" id="l2">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R2">
+                <h2 class="text_b" id="r2">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D3">
+              <div class="Question">
+                <h2 class="text_q" id="q3">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L3">
+                <h2 class="text_a" id="l3">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R3">
+                <h2 class="text_b" id="r3">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D4">
+              <div class="Question">
+                <h2 class="text_q" id="q4">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L4">
+                <h2 class="text_a" id="l4">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R4">
+                <h2 class="text_b" id="r4">오른쪽</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="sector" id="D5">
+              <div class="Question">
+                <h2 class="text_q" id="q5">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L5">
+                <h2 class="text_a" id="l5">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R5">
+                <h2 class="text_b" id="r5">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D6">
+              <div class="Question">
+                <h2 class="text_q" id="q6">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L6">
+                <h2 class="text_a" id="l6">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R6">
+                <h2 class="text_b" id="r6">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D7">
+              <div class="Question">
+                <h2 class="text_q" id="q7">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L7">
+                <h2 class="text_a" id="l7">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R7">
+                <h2 class="text_b" id="r7">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D8">
+              <div class="Question">
+                <h2 class="text_q" id="q8">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L8">
+                <h2 class="text_a" id="l8">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R8">
+                <h2 class="text_b" id="r8">오른쪽</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="sector" id="D9">
+              <div class="Question">
+                <h2 class="text_q" id="q9">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L9">
+                <h2 class="text_a" id="l9">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R9">
+                <h2 class="text_b" id="r9">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D10">
+              <div class="Question">
+                <h2 class="text_q" id="q10">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L10">
+                <h2 class="text_a" id="l10">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R10">
+                <h2 class="text_b" id="r10">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D11">
+              <div class="Question">
+                <h2 class="text_q" id="q11">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L11">
+                <h2 class="text_a" id="l11">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R11">
+                <h2 class="text_b" id="r11">오른쪽</h2>
+              </div>
+            </div>
+
+            <div class="sector" id="D12">
+              <div class="Question">
+                <h2 class="text_q" id="q12">질문 1번</h2>
+              </div>
+              <div class="left" id="sec_L12">
+                <h2 class="text_a" id="l12">왼쪽으로 10칸을 이동하겠다</h2>
+              </div>
+              <h2 class="vs">VS</h2>
+              <div class="right" id="sec_R12">
+                <h2 class="text_b" id="r12">오른쪽</h2>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" id="btn_left">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><img src="/images/prev.png" width="30px" height="auto" id="p_left"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" id="btn_right">
+            <span class="carousel-control-next-icon" aria-hidden="true"><img src="/images/next.png" width="30px" height="auto" id="p_right"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item3">
+      <button type="button" class="btn btn-outline-primary" id="END">END</button>
+    </div>
+  </div>
+
+  <script src="/js/home/game.js"></script>
+</body>
+</html>

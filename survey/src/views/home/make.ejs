@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내가 직접 만들기</title>
+  <link href="/css/home/make.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="Semantic/Semantic-UI-CSS-master/semantic.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="item1">
+      <h2 id="title" style="cursor: pointer;">BALANCE GAME</h2>
+      <div id="save">
+        <button id="btn_save" type="submit"><img id="img_save"src="/images/save.png" width="70vw" height="70vw" title="저장"></button>
+      </div>
+    </div>
+
+    <div class="item2">
+      <div id="game-name">게임이름 : <span><input type="text" id="g" placeholder="게임이름을 정해주세요" onkeyup="InputResult(g)"></span></div>
+    </div>
+
+    <div class="item" id="item3">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q1 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q1" onkeyup="InputResult(q1)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L1" onkeyup="InputResult(L1)">&nbsp VS &nbsp<input type="text" class="right" id="R1" onkeyup="InputResult(R1)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item4">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q2 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q2" onkeyup="InputResult(q2)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L2" onkeyup="InputResult(L2)">&nbsp VS &nbsp<input type="text" class="right" id="R2" onkeyup="InputResult(R2)"></div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="item" id="item5">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q3 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q3" onkeyup="InputResult(q3)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L3" onkeyup="InputResult(L3)">&nbsp VS &nbsp<input type="text" class="right" id="R3" onkeyup="InputResult(R3)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item6">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q4 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q4" onkeyup="InputResult(q4)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L4" onkeyup="InputResult(L4)">&nbsp VS &nbsp<input type="text" class="right" id="R4" onkeyup="InputResult(R4)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item7">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q5 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q5" onkeyup="InputResult(q5)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L5" onkeyup="InputResult(L5)">&nbsp VS &nbsp<input type="text" class="right" id="R5" onkeyup="InputResult(R5)"></div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="item" id="item8">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q6 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q6" onkeyup="InputResult(q6)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L6" onkeyup="InputResult(L6)">&nbsp VS &nbsp<input type="text" class="right" id="R6" onkeyup="InputResult(R6)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item9">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q7 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q7" onkeyup="InputResult(q7)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L7" onkeyup="InputResult(L7)">&nbsp VS &nbsp<input type="text" class="right" id="R7" onkeyup="InputResult(R7)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item10">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q8 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q8"  onkeyup="InputResult(q8)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L8"  onkeyup="InputResult(L8)">&nbsp VS &nbsp<input type="text" class="right" id="R8"  onkeyup="InputResult(R8)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item11">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q9 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q9"  onkeyup="InputResult(q9)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L9"  onkeyup="InputResult(L9)">&nbsp VS &nbsp<input type="text" class="right" id="R9"  onkeyup="InputResult(R9)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item12">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q10 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q10"  onkeyup="InputResult(q10)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L10"  onkeyup="InputResult(L10)">&nbsp VS &nbsp<input type="text" class="right" id="R10"  onkeyup="InputResult(R10)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item13">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q11 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q11"  onkeyup="InputResult(q11)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L11"  onkeyup="InputResult(L11)">&nbsp VS &nbsp<input type="text" class="right" id="R11"  onkeyup="InputResult(R11)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item" id="item14">
+      <div class="subitem">
+        <div class="subitem1">
+          <div class="question">Q12 : <input type="text" class = "q-name" placeholder="질문을 입력해주세요" id="q12"  onkeyup="InputResult(q12)"></div>
+        </div>
+        <div class="subitem2">
+          <div class="versus"><input type="text" class="left" id="L12"  onkeyup="InputResult(L12)">&nbsp VS &nbsp<input type="text" class="right" id="R12"  onkeyup="InputResult(R12)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explain">
+      <h2 id="ex_text">문제는 4개 ~ 12개까지 만들 수 있습니다.<br><br>&nbsp&nbsp입력이 완료되면 저장버튼을 눌러주세요.</h2>
+    </div>
+
+  </div>
+  <script src="/js/home/make.js"></script>
+</body>
+</html>

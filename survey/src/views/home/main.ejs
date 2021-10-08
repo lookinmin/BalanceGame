@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ejs real_main</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/home/main.css">
+  <link rel="stylesheet" type="text/css" href="/Hover-master/css/hover.css">
+</head>
+
+<body>
+  <div type="hidden" id="dbData" value="<%=data%>" /></div> 
+  <!-- ejs로 넘어온 데이터를 자바스크립트로 넘길때 사용(value값을 받아서 js에서 처리) -->
+
+  <div id="menu">
+    <div class="make"></div>
+    <div class="title">BALANCE GAME</div>
+    <div class="make"><img class="make_btn" src="/images/add.png" title="직접 만들기" style="width: 5.5rem; height: 5.5rem;">
+    </div>
+  </div>
+
+  <div class="question_list">
+    <button class="rbutton ui-button list" type="button" id="q1">
+      <div class="text-outlined text-outlined_v5 ha-transition-pseudo">
+        <div class="text-outlined__label ha-transition-pseudo">
+          <div class="info1">
+            <div class="question-title">
+            </div>
+            <div class="question1">
+            </div>
+            <div class="vs_line">VS</div>
+            <div class="question2">
+            </div>
+          </div>
+          <div class="info2 btn btn-outline-primary">
+          </div>
+        </div>
+      </div>
+    </button>
+    <button class="rbutton ui-button list" type="button" id="q2">
+      <div class="text-outlined text-outlined_v5 ha-transition-pseudo">
+        <div class="text-outlined__label ha-transition-pseudo">
+          <div class="info1">
+            <div class="question-title">
+            </div>
+            <div class="question1">
+            </div>
+            <div class="vs_line">VS</div>
+            <div class="question2">
+            </div>
+          </div>
+          <div class="info2 btn btn-outline-primary">
+
+          </div>
+        </div>
+      </div>
+    </button>
+    <button class="rbutton ui-button list" type="button" id="q3">
+      <div class="text-outlined text-outlined_v5 ha-transition-pseudo">
+        <div class="text-outlined__label ha-transition-pseudo">
+          <div class="info1">
+            <div class="question-title">
+            </div>
+            <div class="question1">
+            </div>
+            <div class="vs_line">VS</div>
+            <div class="question2">
+            </div>
+          </div>
+          <div class="info2 btn btn-outline-primary">
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <div class="question_list">
+    <button class="rbutton ui-button list" type="button" id="q4">
+      <div class="text-outlined text-outlined_v5 ha-transition-pseudo">
+        <div class="text-outlined__label ha-transition-pseudo">
+          <div class="info1">
+            <div class="question-title">
+            </div>
+            <div class="question1">
+            </div>
+            <div class="vs_line">VS</div>
+            <div class="question2">
+            </div>
+          </div>
+          <div class="info2 btn btn-outline-primary">
+          </div>
+        </div>
+      </div>
+    </button>
+    <button class="rbutton ui-button list" type="button" id="q5">
+      <div class="text-outlined text-outlined_v5 ha-transition-pseudo">
+        <div class="text-outlined__label ha-transition-pseudo">
+          <div class="info1">
+            <div class="question-title">
+            </div>
+            <div class="question1">
+            </div>
+            <div class="vs_line">VS</div>
+            <div class="question2">
+            </div>
+          </div>
+          <div class="info2 btn btn-outline-primary">
+          </div>
+        </div>
+      </div>
+    </button>
+    <button class="rbutton ui-button list" type="button" id="q6">
+      <div class="text-outlined text-outlined_v5 ha-transition-pseudo">
+        <div class="text-outlined__label ha-transition-pseudo">
+          <div class="info1">
+            <div class="question-title"></div>
+            <div class="question1"></div>
+            <div class="vs_line">VS</div>
+            <div class="question2"></div>
+          </div>
+          <div class="info2 btn btn-outline-primary"></div>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <div class="more_btn">
+    <button type="button" class="btn btn-outline-secondary add_btn hvr-glow">더보기</button>
+  </div>
+
+
+
+  <div class="item3">
+    <div class="sub_item1">
+      <h2 id="small_title">Balance Game</h2>
+    </div>
+
+    <img id="gmail" src="/images/gmail.png" width="40px" height="auto" title="개발자 mail : sncalphs@gmail.com">
+    <div id="copyright">@Copyright 2021 M&G Company<br>All Rights Reserved </div>
+
+  </div>
+
+
+
+  <script src="/js/home/main.js" defer></script>
+</body>
+
+</html>

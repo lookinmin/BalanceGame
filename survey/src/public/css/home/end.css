@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "IM_Hyemin-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IM_Hyemin-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "paybooc-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRun-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 4fr 300px;
+  justify-content: center;
+}
+
+.item1 {
+  margin: 3% auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+}
+
+.item2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.item3 {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-content: center;
+
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr;
+  border-top: 2px solid gray;
+  background-color: lightgray;
+}
+
+.sub_item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+}
+
+.sub_item3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+
+  padding-top: 20px;
+  table-layout: fixed;
+}
+
+.sub_item4 {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-content: center;
+  margin-right: 20%;
+}
+/*-------------------------------grid 설정------------------------*/
+#result_title {
+  font-family: "IM_Hyemin-Regular";
+  font-size: 3.5vw;
+  font-weight: 600;
+}
+.sector {
+  display: none;
+  margin-top: 1rem;
+}
+
+.q-name {
+  font-size: 2vw;
+  font-weight: 450;
+  margin: 0 auto;
+  font-family: "IM_Hyemin-Regular";
+}
+
+.bar-graph {
+  margin: 20px auto 2em;
+  width: calc(100% - 2em);
+  max-width: 75rem;
+  height: 5rem;
+  border: 3px solid gray;
+  border-radius: 30px;
+  background-color: greenyellow;
+}
+
+.bar-graph div {
+  height: 100%;
+  background-color: skyblue;
+  border-radius: 27px 0px 0px 27px;
+  border-right: 3px solid red;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto 1em;
+}
+
+.ct1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 2px solid blue;
+  margin-right: 1em;
+  background-color: skyblue;
+}
+
+.ct2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 2px solid green;
+  margin-right: 1em;
+  background-color: greenyellow;
+}
+
+.ct_textL {
+  font-size: 16px;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+
+.ct_textR {
+  font-size: 16px;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+
+.per_left {
+  display: flex;
+  position: relative;
+  padding: 1em 1.5em;
+  font-size: 20px;
+  font-family: "CookieRun-Regular";
+}
+
+.per_right {
+  display: flex;
+  position: relative;
+  padding: 1.2em 1.7em;
+  float: right;
+  margin-top: -77px;
+  margin-right: -10px;
+  font-size: 20px;
+  font-family: "CookieRun-Regular";
+}
+
+/*------------------------------최하단 레이어--------------------------------*/
+#gmail {
+  position: relative;
+  cursor: pointer;
+  margin-left: 5vw;
+  margin-bottom: 30px;
+  height: 40px;
+}
+#copyright {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 7vw;
+}
+
+#small_title {
+  cursor: none;
+  position: relative;
+  color: #1e1f21;
+  font-weight: bold;
+  margin-left: 2rem;
+  margin-top: 5vh;
+  font-size: 40px;
+  font-family: "paybooc-Bold";
+}
+#small_title:hover {
+  animation-name: focus-in-expand;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  padding-top: 8%;
+  padding-bottom: 3%;
+  font-size: 18px;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+
+li:hover {
+  cursor: pointer;
+  animation-name: focus-in-expand;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+
+.focus-in-expand {
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "IM_Hyemin-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IM_Hyemin-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "paybooc-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRun-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SDSamliphopangche_Outline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr) 1fr repeat(12, 2fr);
+  margin-top: 2rem;
+}
+
+.item1 {
+  display: grid;
+  grid-template-columns: 1vw 1fr 1vw;
+  grid-template-rows: 1fr;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1/2;
+  margin: 0 auto;
+  padding-top: 1vh;
+}
+#title {
+  grid-column: 2/3;
+  font-size: 3.3vw;
+  font-family: "IM_Hyemin-Bold";
+}
+#save {
+  grid-column: 3/4;
+  margin-left: 23vw;
+}
+#btn_save {
+  background-color: white;
+  border: none;
+}
+#btn_save:hover {
+  animation-name: rotate-90-cw;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+.item2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0 auto;
+}
+
+#item3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 4/5;
+}
+
+#item4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 5/6;
+}
+#item5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 6/7;
+}
+#item6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 7/8;
+}
+#item7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 8/9;
+}
+#item8 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 9/10;
+}
+
+#item9 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 10/11;
+}
+#item10 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 11/12;
+}
+#item11 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 12/13;
+}
+#item12 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 13/14;
+}
+#item13 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 14/15;
+}
+#item14 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 15/16;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 11vw 62vw 11vw;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  padding-top: 5vh;
+  margin-bottom: 5vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
+.subitem {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 2px solid cornflowerblue;
+  border-radius: 20px;
+  margin-bottom: 5vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+.subitem1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0 auto;
+  padding-top: 3vw;
+}
+.subitem2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0 auto;
+  padding-top: 3vw;
+}
+
+#title {
+  grid-column: 2/3;
+  font-size: 3vw;
+  font-family: "IM_Hyemin-Bold";
+}
+
+#game-name {
+  font-size: 2.2vw;
+  font-family: "CookieRun-Regular";
+}
+
+#g {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 2vw;
+  margin-left: 2vw;
+  font-family: "CookieRun-Regular";
+  text-align: center;
+}
+
+.question {
+  font-size: 2.6vw;
+  margin: 0 auto;
+  font-family: "SDSamliphopangche_Outline";
+}
+
+.q-name {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  width: 40vw;
+  font-size: 1.6vw;
+  margin-left: 2vw;
+  padding-bottom: 0.6vh;
+  font-family: "IM_Hyemin-Regular";
+  text-align: center;
+}
+
+.versus {
+  display: flex;
+  margin: 0 auto;
+  font-size: 1.6vw;
+  font-family: "SDSamliphopangche_Outline";
+}
+
+.left {
+  border: none;
+  border-bottom: 1px solid skyblue;
+  outline: none;
+  font-size: 1.6vw;
+  width: 25vw;
+  margin-right: 1vw;
+  font-family: "IM_Hyemin-Regular";
+  text-align: center;
+}
+
+.right {
+  border: none;
+  border-bottom: 1px solid greenyellow;
+  outline: none;
+  font-size: 1.6vw;
+  width: 25vw;
+  margin-left: 1vw;
+  font-family: "IM_Hyemin-Regular";
+  text-align: center;
+}
+
+.explain {
+  margin: 0 auto;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#ex_text {
+  font-family: "IM_Hyemin-Regular";
+  font-size: 1.5vw;
+  color: gray;
+}
+
+.rotate-90-cw {
+  -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-90-cw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-10-3 21:28:33
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-90-cw
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}

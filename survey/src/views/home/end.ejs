@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결과보기</title>
+  <link rel="stylesheet" type="text/css" href="/css/home/end.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div type="hidden" id="perData" value="<%=perArr%>" /></div> 
+  <div type="hidden" id="qData" value="<%=qArr%>" /></div> 
+
+  <div class="wrapper">
+    <div class="item1">
+      <h2 id="result_title">밸런스 게임 결과</h2>
+    </div>
+
+    <div class="item2">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" id="myCarousel"
+        data-bs-interval="false" data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" id="indi1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: grey;"></button>
+          <button type="button" id="indi2" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: grey;"></button>
+          <button type="button" id="indi3" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: grey;"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="sector" id="E1">
+              <h2 class="q-name" id="question-1">text</h2>
+              <div class="bar-graph" id="mk1" data-percent=20>
+                <div>
+                  <p class="per_left" id="per_L1"></p>
+                </div>
+                <p class="per_right" id="per_R1"></p>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx1_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx1_right">text2</p>
+              </div>
+            </div>
+
+            <div class="sector" id="E2">
+              <h2 class="q-name" id="question-2">text</h2>
+              <div class="bar-graph" id="mk2" data-percent=80>
+                <div>
+                  <p class="per_left" id="per_L2"></p>
+                </div>
+                  <P class="per_right" id="per_R2"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx2_left"></p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx2_right"></p>
+              </div>
+            </div>
+
+            <div class="sector" id="E3">
+              <h2 class="q-name" id="question-3">text</h2>
+              <div class="bar-graph" id="mk3" data-percent=40>
+                <div>
+                  <p class="per_left" id="per_L3"></p>
+                </div>
+                <P class="per_right" id="per_R3"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx3_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx3_right">text2</p>
+              </div>
+            </div>
+
+            <div class="sector" id="E4" style="margin-bottom: 4rem;">
+              <h2 class="q-name" id="question-4">text</h2>
+              <div class="bar-graph" id="mk4" data-percent=70>
+                <div>
+                  <p class="per_left" id="per_L4"></p>
+                </div>
+                <P class="per_right" id="per_R4"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx4_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx4_right">text2</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="sector" id="E5">
+              <h2 class="q-name" id="question-5">text</h2>
+              <div class="bar-graph" id="mk5" data-percent=70>
+                <div>
+                  <p class="per_left" id="per_L5"></p>
+                </div>
+                <P class="per_right" id="per_R5"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx5_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx5_right">text2</p>
+              </div>
+            </div>
+            <div class="sector" id="E6">
+              <h2 class="q-name" id="question-6">text</h2>
+              <div class="bar-graph" id="mk6" data-percent=20>
+                <div>
+                  <p class="per_left" id="per_L6"></p>
+                </div>
+                  <P class="per_right" id="per_R6"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx6_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx6_right">text2</p>
+              </div>
+            </div>
+            <div class="sector" id="E7">
+              <h2 class="q-name" id="question-7">text</h2>
+              <div class="bar-graph" id="mk7" data-percent=15>
+                <div>
+                  <p class="per_left" id="per_L7"></p>
+                </div>
+                <P class="per_right" id="per_R7"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx7_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx7_right">text2</p>
+              </div>
+            </div>
+            <div class="sector" id="E8" style="margin-bottom: 4rem;">
+              <h2 class="q-name" id="question-8">text</h2>
+              <div class="bar-graph" id="mk8" data-percent=67>
+                <div>
+                  <p class="per_left" id="per_L8"></p>
+                </div>
+                <P class="per_right" id="per_R8"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx8_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx8_right">text2</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="sector" id="E9">
+              <h2 class="q-name" id="question-9">text</h2>
+              <div class="bar-graph" id="mk9" data-percent=40>
+                <div>
+                  <p class="per_left" id="per_L9"></p>
+                </div>
+                <P class="per_right" id="per_R9"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx9_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx9_right">text2</p>
+              </div>
+            </div>
+            <div class="sector" id="E10">
+              <h2 class="q-name" id="question-10">text</h2>
+              <div class="bar-graph" id="mk10" data-percent=12>
+                <div>
+                  <p class="per_left" id="per_L10"></p>
+                </div>
+                <P class="per_right" id="per_R10"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx10_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx10_right">text2</p>
+              </div>
+            </div>
+            <div class="sector" id="E11">
+              <h2 class="q-name" id="question-11">text</h2>
+              <div class="bar-graph" id="mk11" data-percent=76>
+                <div>
+                  <p class="per_left" id="per_L11"></p>
+                </div>
+                <P class="per_right" id="per_R11"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx11_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx11_right">text2</p>
+              </div>
+            </div>
+            <div class="sector" id="E12" style="margin-bottom: 4rem;">
+              <h2 class="q-name" id="question-12">text</h2>
+              <div class="bar-graph" id="mk12" data-percent=43>
+                <div>
+                  <p class="per_left" id="per_L12"></p>
+                </div>
+                <P class="per_right" id="per_R12"></P>
+              </div>
+              <div class="category">
+                <div class="ct1"></div>
+                <p class="ct_textL" id="tx12_left">text1</p>
+                <div class="ct2"></div>
+                <p class="ct_textR" id="tx12_right">text2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" id="left">
+          <span class="carousel-control-prev-icon" aria-hidden="true"><img src="/images/prev.png" width="30px"
+              height="auto"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" id="right">
+          <span class="carousel-control-next-icon" aria-hidden="true"><img src="/images/next.png" width="30px"
+              height="auto"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="item3">
+      <div class="sub_item1">
+        <h2 id="small_title">Balance Game</h2>
+      </div>
+      <div class="sub_item3">
+        <ul>
+          <li id="go_list">메인화면으로</li>
+          <li id="make">내가 만들기</li>
+        </ul>
+      </div>
+      <div class="sub_item4">
+        <img id="gmail" src="/images/gmail.png" width="40px" height="auto" title="개발자 mail : sncalphs@gmail.com">
+        <p id="copyright">@Copyright 2021 M&G Company<br>All Rights Reserved </p>
+      </div>
+
+    </div>
+  </div>
+  <script src="/js/home/end.js"></script>
+
+</body>
+
+</html>

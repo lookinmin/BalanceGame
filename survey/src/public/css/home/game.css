@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "IM_Hyemin-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IM_Hyemin-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "paybooc-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SDSamliphopangche_Outline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.item1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 1vw auto;
+}
+
+#title {
+  font-family: "IM_Hyemin-Bold";
+  font-size: 2.8vw;
+}
+.item2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.sector {
+  display: none;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 0.3fr 1fr;
+  grid-template-rows: 0.8fr 1fr;
+
+  border-radius: 10px;
+  border: 2px solid gray;
+
+  margin: 1rem 13vw;
+  padding-bottom: 0.5vw;
+  margin-bottom: 3vw;
+}
+.Question {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.vs {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 1.8vw;
+  margin: 2vw auto;
+  font-family: "SDSamliphopangche_Outline";
+}
+
+.left {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  border-radius: 15px;
+  border: 1px solid skyblue;
+  margin: 1vw 2vw;
+
+  font-size: 2vw;
+  font-family: "IM_Hyemin-Bold";
+}
+
+.right {
+  grid-column: 3/4;
+  grid-row: 2/3;
+
+  border-radius: 15px;
+  border: 1px solid greenyellow;
+  margin: 1vw 2vw;
+
+  font-size: 2vw;
+  font-family: "IM_Hyemin-Bold";
+}
+
+.text_q {
+  width: fit-content;
+  margin: 2vw auto;
+  font-size: 1.8vw;
+  font-family: "IM_Hyemin-Bold";
+}
+
+.text_a {
+  width: fit-content;
+  margin: 1vw auto;
+  font-size: 1.4vw;
+  max-width: 20vw;
+}
+
+.text_b {
+  width: fit-content;
+  margin: 1vw auto;
+  font-size: 1.4vw;
+  max-width: 20vw;
+}
+
+.carousel-indicators {
+  padding-top: 1rem;
+}
+
+#carouselExampleIndicators {
+  padding-bottom: 6rem;
+}
+
+.left:hover {
+  cursor: pointer;
+  background-color: skyblue;
+}
+
+.right:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+.item3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 1vw auto;
+}
+
+#END {
+  width: 200px;
+  height: auto;
+  font-family: "paybooc-Bold";
+  margin-top: 2vw;
+}
+
+#btn_left {
+  display: none;
+}
+
+#btn_right {
+  display: none;
+}
